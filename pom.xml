@@ -72,6 +72,11 @@
             <artifactId>kotlin-stdlib-jdk8</artifactId>
             <version>1.4.20</version>
         </dependency>
+        <dependency>
+            <groupId>args4j</groupId>
+            <artifactId>args4j</artifactId>
+            <version>2.33</version>
+        </dependency>
     </dependencies>
 
 </project>
