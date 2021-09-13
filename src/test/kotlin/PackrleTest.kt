@@ -5,15 +5,15 @@ import java.io.File
 class PackrleTest : TestCase() {
 
     fun testEncode() {
-        assertEquals("4A4BE3q2Á2æ",Packrle().encode("AAAABBBBEqqq1122"))
-        assertEquals("1a1h1s1d1h1a1s1h1d1a1h1s1d1h1a1s1h1dh",Packrle().encode("ahsdhashdahsdhashdh"))
-        assertEquals("27â1w18â",Packrle().encode("222222222222222222222222222w222222222222222222"))
+        assertEquals("4A4BE3q2Á2æ", Packrle().encode("AAAABBBBEqqq1122"))
+        assertEquals("a2hsd2has2hda2hsd2has2hd2h", Packrle().encode("ahhsdhhashhdahhsdhhashhdhh"))
+        assertEquals("27æw18æ", Packrle().encode("222222222222222222222222222w222222222222222222"))
     }
 
     fun testDecode() {
         assertEquals("AAAABBBBEqqq1122",Packrle().decode("4A4BE3q2Á2æ"))
-        assertEquals("ahsdhashdahsdhashdh",Packrle().decode("1a1h1s1d1h1a1s1h1d1a1h1s1d1h1a1s1h1dh"))
-        assertEquals("222222222222222222222222222w222222222222222222",Packrle().decode("27æ1w18æ"))
+        assertEquals("ahhsdhhashhdahhsdhhashhdhh",Packrle().decode("a2hsd2has2hda2hsd2has2hd2h"))
+        assertEquals("222222222222222222222222222w222222222222222222",Packrle().decode("27æw18æ"))
 
     }
 
